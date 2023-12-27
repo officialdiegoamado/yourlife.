@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Life in Weeks, Months, or Years</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Life </h1>
+        <label for="birthdate">Enter your Date of Birth:</label>
+        <input type="date" id="birthdate">
+        <label for="timeUnit">Display in:</label>
+        <select id="timeUnit">
+            <option value="weeks">Weeks</option>
+            <option value="months">Months</option>
+            <option value="years">Years</option>
+        </select>
+        <div class="labels-top-container"></div>
+        <div class="chart-container">
+            <div class="labels-left-container"></div>
+            <ol class="chart"></ol>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

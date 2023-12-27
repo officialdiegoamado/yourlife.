@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #06218e;
+}
+
+select, label {
+    margin: 10px;
+    padding: 5px;
+}
+
+.labels-top-container, .labels-left-container {
+    user-select: none;
+}
+
+.labels-top-container {
+    display: flex;
+    justify-content: start;
+    margin-left: 40px;
+}
+
+.labels-top-container .week-label {
+    width: calc(20px * 5); /* Width to cover 5 blocks */
+    text-align: center;
+}
+
+.chart-container {
+    display: flex;
+}
+
+.labels-left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 5px;
+}
+
+.labels-left-container .age-label {
+    height: calc(20px * 5); /* Height to cover 5 rows, aligning with the top labels */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(20px * 52); /* Width to fit all blocks for 52 weeks */
+}
+
+.chart li {
+    list-style-type: none;
+    width: 20px;
+    height: 20px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    padding: 0;
+}
+
+.passed {
+    background-color: #b22222; /* A darker red color */
+}
